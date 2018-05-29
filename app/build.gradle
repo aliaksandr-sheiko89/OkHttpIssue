@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+ext {
+    okHttpVersion = '3.10.0'
+    retrofitVersion = '2.3.0'
+    rxjavaVersion = '2.1.4'
+    rxAndroidVersion = '2.0.1'
+    gsonVersion = '2.8.2'
+    retrofitConverterGsonVersion = '2.3.0'
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "example.okhtttp.issue.cancell.okhttpcancellissue"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    implementation "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+    implementation("com.squareup.okhttp3:logging-interceptor:${okHttpVersion}") {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+    implementation "io.reactivex.rxjava2:rxjava:${rxjavaVersion}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitConverterGsonVersion}"
+
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

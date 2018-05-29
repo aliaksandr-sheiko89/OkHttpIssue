@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "802001028344",
+    "firebase_url": "https://okhttptest-ee208.firebaseio.com",
+    "project_id": "okhttptest-ee208",
+    "storage_bucket": "okhttptest-ee208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802001028344:android:2cf894a1fb8c5db8",
+        "android_client_info": {
+          "package_name": "example.okhtttp.issue.cancell.okhttpcancellissue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802001028344-f622q2p3mpr9e6io8qa9ngtrlup16h7g.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "802001028344-f622q2p3mpr9e6io8qa9ngtrlup16h7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Mk16FIu0gyilUePIWo-8jPMaVYgKmwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
